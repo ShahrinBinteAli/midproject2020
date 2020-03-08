@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<form method="POST" action="regcheck.php">
+<table border="1">
+	<tr>
+		<td colspan="3"><center><h3>Registration</h3></center></td>
+	</tr>
+	<tr>
+		
+		<td>
+			ID: <input type="text" name="idname" value="">
+		</td>
+		
+	</tr>
+	<tr>
+		
+		<td>
+			Password: <input type="Password" name="password" value="">
+		</td>
+		
+	</tr>
+	
+	<tr>
+		
+		<td>
+			name: <input type="text" name="uname" value="">
+		</td>
+		
+	</tr>
+	<tr>
+		
+		<td>
+			Email: <input type="text" name="uemail" value=""></td>
+		
+	</tr>
+	<tr>
+		
+		<td> Gender:
+			<input type="radio" name="ugender" value="Male">Male
+			<input type="radio" name="ugender" value="Female">Female
+			<input type="radio" name="ugender" value="others">others
+		</td>
+		
+	</tr>
+	<tr>
+		<td>Date of Birth:
+			<input type="text" name="day" value="">
+			<input type="text" name="month" value="">
+			<input type="text" name="year" value="">
+		</td>
+		
+	</tr>
+	<tr>
+	<td>Blood Group
+		<select name="blood" id="blood">
+			<option>choose</option>
+			<option>A+</option>
+			<option>B+</option>
+			<option>A-</option>
+		</select>
+	</td>
+	</tr>
+	<tr>
+		<td>Degree
+			
+			<input type="checkbox" name="degree">BSC
+			<input type="checkbox" name="degree">MSC
+		</td>
+	</tr>
+	<tr>
+		
+		<td>
+			User Type:<input type="radio" name="usertype" value="Student">Student
+			<input type="radio" name="usertype" value="Admin">Admin
+			<input type="radio" name="usertype" value="Teacher">Teacher
+			<input type="radio" name="usertype" value="Parents">Parents
+		
+		</td>
+	
+	</tr>
+
+	<tr>
+		<td>
+	<input type="submit" name="signup" value="signup">
+	<!--<a href="login.php">Sign in </a>-->
+	
+	</td>
+	</tr>
+</table>
+</form>
+</body>
+</html>
