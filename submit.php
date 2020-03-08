@@ -1,0 +1,30 @@
+<?php
+session_start();
+    $id=$_SESSION['id'];
+    $name=$_SESSION['name'];
+	$password=$_SESSION['password'];
+	$gender=$_SESSION['gender'];
+	$email=$_SESSION['email'];
+	$blood=$_SESSION['blood'];
+	$degree=$_SESSION['degree'];
+	$date=$_SESSION['date'];
+$file=fopen('info.txt','a');
+fwrite($file,$id);
+fwrite($file,$name);
+fwrite($file,$email);
+fwrite($file,$password);
+fwrite($file,$gender);
+fwrite($file,$date);
+fwrite($file,$blood);
+fwrite($file,$degree);
+fclose($file);	
+?>
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<a href="login.php">go to login</a>
+</body>
+</html>
